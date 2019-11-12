@@ -1,3 +1,96 @@
-*{
-	box-sizing: border-box;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: orange;
+}
+
+.container {
+    background-color: lightgrey;
+    width: 900px;
+    margin: 2rem auto;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    padding: 20px 0 5px 5px
+}
+
+.row {
+    display: flex;
+    padding: 10px;
+}
+
+img {
+    width: 100%
+}
+
+.tiere {
+    margin: 0 30px;
+    position: relative;
+
+}
+
+p {
+    position: absolute;
+    background: white;
+    padding: 5px;
+	/* padding bettet die Dinge ein */
+}
+
+#hund {
+    bottom: 0;
+	left:0;
+	z-index: 3;
+	/* z-index ist die dritte Ebene, damit hole ich den Text Hund hoch über den Kreis */
+}
+
+#katze {
+    right: 0;
+    bottom: 0;
+	z-index: 3;
+}
+
+#maus {
+    right: 0;
+    top: 0;
+}
+
+#huhn {
+    left: 0;
+    top: 0;
+}
+span{
+	width: 100px;
+	height:100px;
+	background: #fff;
+	border-radius:50%;
+	display:block;
+	position:absolute;
+	z-index: 2;
+}
+
+
+#hundsüß{
+	bottom:0;
+	left:0;
+	/* border-radius macht die Dinge rund */
+}
+#katzesüß{
+	bottom: 0;
+	right:0;
+
+}
+#maussüß{
+	bottom: 0;
+	right:0;
+
+}
+#huhnsüß{
+	bottom:0;
+	right:0;
+
 }
